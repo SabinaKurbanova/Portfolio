@@ -1,0 +1,132 @@
+.about-me
+  &__container
+    width: 1300px
+    margin: auto
+    margin-bottom: 130px
+  &__language
+    max-width: 400px
+    min-height: 300px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-bottom: 100px
+  &__edu
+    max-width: 600px
+  &__table
+    width: 1200px
+    margin: auto
+    border: 1px solid white
+    min-height: 200px
+    text-align: center
+  &__table tr td 
+    border: 1px solid white
+    font-size: 20px
+    line-height: 38px
+  &__text
+    position: relative
+    background-color: $blue
+    padding: 15px 30px
+    border-radius: 50px
+    max-width: 450px
+    margin-bottom: 50px
+    color: $purple
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      right: -300px
+      width: 300px
+      background-color: $blue
+      border: 2px solid $blue
+      border-radius: 2px
+.language
+    &__back
+      max-width: 400px
+      min-height: 34px
+      background-color: $light
+      position: relative
+    &__front
+      position: absolute
+      background-color: $purple
+      min-height: 34px
+      font-weight: 700
+      padding-left: 20px
+      font-size: 20px
+      display: flex
+      align-items: center
+.Uzbek
+  width: 200px
+.Chinese
+  width: 330px
+.Russian
+  width: 260px   
+.English
+  width: 280px
+.Turkmen
+  width: 390px
+.Turkish
+  width: 350px
+
+
+@media (max-width: 1200px)
+  .about-me
+    &__languages
+      margin-bottom: 60px
+    &__table
+      max-width: 900px
+@media (max-width: 992px)
+  .about-me
+    &__container
+      width: 600px
+    &__text
+      font-size: 23px
+      padding: 10px 15px
+      max-width: 350px
+    &__language
+      margin: auto
+    &__table
+      max-width: 500px
+      &__name
+        font-size: 14px
+        line-height: 18px
+    &__table tr td 
+      font-size: 14px
+      line-height: 20px
+
+@media (max-width: 768px)
+  .about-me
+    &__container
+      max-width: 500px
+  
+@media (max-width: 576px)
+  .about-me
+    &__container
+      width: 320px
+    &__table
+      width: 300px
+    &__text
+      font-size: 18px
+      width: 250px
+  .skills
+    &__title
+      font-size: 18px
+      max-width: 300px
+  .language
+    &__back
+      max-width: 250px
+  .Uzbek
+    width: 90px
+  .Chinese
+    width: 200px
+  .Russian
+    width: 180px   
+  .English
+    width: 180px
+  .Turkmen
+    width: 240px
+  .Turkish
+    width: 200px
+@media (max-width: 480px)
+  .about-me
+    &__edu
+      display: none

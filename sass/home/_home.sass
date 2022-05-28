@@ -1,0 +1,234 @@
+.btn
+  padding: 12px 26px
+  background-color: $yellow
+  border-radius: 30px
+  color: $black
+  font-weight: 700
+  cursor: pointer
+
+.dark-theme
+  background: $light
+  color: $black
+.label
+  background-color: $blue
+  border: 1px solid $yellow
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 70px
+  height: 30px
+  padding: 0 8px
+  position: relative
+  cursor: pointer
+  border-radius: 25px
+  &__ball
+    position: absolute
+    width: 25px
+    height: 26px
+    border-radius: 50%
+    background-color: $light
+    transition: 0.4s ease
+  &__img
+    width: 20px
+    height: 20px
+    &__moon
+      width: 18px
+      height: 18px
+
+
+  
+.header
+  &__container
+    max-width: 1300px
+    margin: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 60px
+    margin-bottom: 130px
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__items
+    list-style: none
+    width: 530px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__item
+    text-decoration: none
+
+.hero
+  &__container
+    max-width: 1300px
+    margin: auto
+    margin-bottom: 134px
+    text-align: center
+    display: flex
+    justify-content: space-between
+  &__name
+    &_color
+      color: $yellow
+  &__career
+    font-weight: 700
+    font-size: 50px
+    line-height: 100px
+    margin: 0
+  &__subtitle
+    margin-bottom: 80px
+  &__img
+    max-width: 200px
+    min-height: 200px
+.blur
+  position: absolute
+  top: 400px
+  left: 5%
+  width: 200px
+  height: 200px
+  border-radius: 50%
+  filter: blur(100px)
+  background-color: $yellow
+.burger
+  display: none
+  cursor: pointer
+  &__line
+    margin-bottom: 6px
+    width: 35px
+    height: 4px
+    background-color: $yellow
+
+
+
+.projects
+  &__container
+    width: 1200px
+    margin: auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 130px
+  &__box
+    background-color: #1c1f1e
+    padding: 26px 0
+    width: 350px
+    display: flex
+    justify-content: space-around
+.box
+  &__text
+    text-align: center
+    &__num
+      color: $yellow
+      font-weight: 700
+      font-size: 38px
+    &__name
+      font-weight: 700
+      font-size: 20px
+      color: $light
+  &__scroll
+    cursor: pointer
+@media (max-width: 1200px)
+  .projects
+    &__container
+      max-width: 250px
+      flex-direction: column
+    &__box
+      margin-bottom: 50px
+@media (max-width: 992px)
+  .hero
+    &__name
+      font-size: 30px
+    &__career
+      font-size: 40px
+      line-height: 80px
+    &__subtitle
+      font-size: 14px
+      line-height: 17px
+  .projects
+    &__box
+      padding: 18px 0
+      max-width: 300px
+  .box
+    &__text
+      &__num 
+        font-size: 30px
+        line-height: 40px
+@media (max-width: 480px)
+  .hero
+    &__content
+      max-width: 300px
+    &__name
+      font-size: 25px
+    &__career
+      font-size: 30px
+      line-height: 60px
+    &__subtitle
+      font-size: 12px
+ 
+  .box
+    &__text
+      &__num 
+        font-size: 24px
+        line-height: 28px
+      &__name
+        font-size: 18px
+        line-height: 35px
+  .text
+    &__box
+      &__title
+        font-size: 20px
+      &__subtitle
+        font-size: 14px
+        line-height: 17px
+@media (max-width:768px)
+  .btn
+    display: none
+  .burger
+    display: block
+  .burger.active .burger__line:nth-child(2)
+    opacity: 0
+  .burger.active .burger__line:nth-child(1)
+    transform: translateY(10px) rotate(45deg)
+  .burger.active .burger__line:nth-child(3)
+    transform: translateY(-10px) rotate(-45deg)
+  .navbar
+    &__items
+      width: 100%
+      height: 300px
+      text-align: center
+      background-color: $blue
+      position: absolute
+      top: 0
+      right: 30px
+      display: none
+  .header
+    &__container
+      max-width: 500px
+      margin: auto
+      margin-top: 60px
+      margin-bottom: 100px
+  .hero
+    &__container
+      max-width: 500px
+      margin: auto
+      flex-direction: column
+      align-items: center
+      margin-bottom: 100px
+
+  .skills
+    &__container
+      max-width: 500px
+      margin: auto
+    &__boxes
+      width: 300px
+      margin: auto
+      text-align: center
+      align-items: center
+      justify-content: center
+    &__box
+      align-items: center
+@media (max-width: 480px)
+  .header
+    &__container
+      max-width: 320px

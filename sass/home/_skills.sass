@@ -1,0 +1,48 @@
+.skills
+  &__title
+    max-width: 550px
+    &::after
+      width: 400px
+      right: -400px
+  &__container
+    max-width: 1300px
+    margin: auto
+  &__boxes
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__blur
+    top: 90%
+    left: 90%
+  &__box
+    min-height: 300px
+    max-width: 270px
+    &__title
+      font-size: 20px
+    &__text
+      display: flex
+      justify-content: space-around
+      align-items: center
+      margin-bottom: 50px
+@media ( max-width: 1200px)
+  .skills
+    &__container
+      max-width: 900px
+@media (max-width:992px)
+  .skills
+    &__container
+      max-width: 600px
+    &__title
+      width: 350px
+    &__box
+      min-height: 200px
+      margin-bottom: 30px
+  .language
+    &__front
+      font-size: 18px
+ 
+@media (max-width: 576px)
+  .skills
+    &__container
+      max-width: 300px

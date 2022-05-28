@@ -1,0 +1,74 @@
+.footer
+  background-color: #1c1f1e
+  &__container
+    max-width: 1300px
+    min-height: 400px
+    margin: auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__top
+    width: 700px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__name
+      margin-bottom: 20px
+    &__career
+      font-size: 20px
+      margin-bottom: 20px
+    &__address
+      font-size: 20px
+
+    
+  &__items
+    list-style: none
+    display: flex
+    flex-direction: column
+    align-items: start
+  
+  &__contacts 
+    &__img
+      width: 30px
+      height: 30px
+      margin-right: 15px
+@media (max-width: 1200px)
+  .footer
+    &__container
+      max-width: 700px
+      flex-direction: column
+      align-items: start
+    &__info
+      margin-top: 80px
+    &__top
+      justify-content: space-between
+      margin-top: 60px
+      margin-bottom: 50px
+@media (max-width: 768px)
+  .footer
+    &__container
+      max-width: 500px
+      align-items: center
+    &__top
+      max-width: 500px
+@media (max-width: 576px)
+  .footer
+    &__container
+      max-width: 300px
+      flex-direction: column
+    &__top
+      flex-direction: column
+      margin-top: 50px
+      max-width: 300px
+      &__name
+        font-size: 25px
+      &__career
+        font-size: 16px
+      &__address
+        font-size: 18px
+    &__info
+      margin-bottom: 40px
+      text-align: center
+    &__links
+      margin-bottom: 40px
+      
