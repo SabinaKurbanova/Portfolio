@@ -136,7 +136,7 @@ h3 {
 }
 
 .hero__container {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: auto;
   margin-bottom: 134px;
   text-align: center;
@@ -278,6 +278,9 @@ h3 {
 }
 
 @media (max-width: 480px) {
+  .header__container {
+    max-width: 320px;
+  }
   .hero__content {
     max-width: 300px;
   }
@@ -376,14 +379,8 @@ h3 {
   }
 }
 
-@media (max-width: 480px) {
-  .header__container {
-    max-width: 320px;
-  }
-}
-
 .about-me__container {
-  width: 1300px;
+  width: 1100px;
   margin: auto;
   margin-bottom: 130px;
 }
@@ -583,7 +580,7 @@ h3 {
 }
 
 .skills__container {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -658,7 +655,7 @@ h3 {
 }
 
 .footer__container {
-  max-width: 1300px;
+  max-width: 1100px;
   min-height: 400px;
   margin: auto;
   display: -webkit-box;
